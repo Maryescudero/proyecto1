@@ -233,6 +233,7 @@ public class FormularioInscripcionData extends javax.swing.JInternalFrame {
 
     private void jBExit3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBExit3ActionPerformed
         dispose();
+        JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
     }//GEN-LAST:event_jBExit3ActionPerformed
 
     private void jrbMateriasInscriptasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jrbMateriasInscriptasActionPerformed

@@ -139,6 +139,7 @@ public class FormularioAlumnoData extends javax.swing.JInternalFrame {
 
     private void jBExit1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBExit1ActionPerformed
         dispose();
+        JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
     }//GEN-LAST:event_jBExit1ActionPerformed
 
     private void jbBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuscarActionPerformed

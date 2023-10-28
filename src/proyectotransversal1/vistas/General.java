@@ -36,7 +36,6 @@ public class General extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         incribirAlumno = new javax.swing.JMenu();
         jRBIncripcion = new javax.swing.JRadioButtonMenuItem();
-        jRadioButtonMenuItem10 = new javax.swing.JRadioButtonMenuItem();
         jMenu2 = new javax.swing.JMenu();
         agregarMateria = new javax.swing.JRadioButtonMenuItem();
         jMenu3 = new javax.swing.JMenu();
@@ -83,10 +82,6 @@ public class General extends javax.swing.JFrame {
             }
         });
         incribirAlumno.add(jRBIncripcion);
-
-        jRadioButtonMenuItem10.setSelected(true);
-        jRadioButtonMenuItem10.setText("Ver lista ");
-        incribirAlumno.add(jRadioButtonMenuItem10);
 
         jMenuBar1.add(incribirAlumno);
 
@@ -149,6 +144,11 @@ public class General extends javax.swing.JFrame {
 
         jRadioButtonMenuItem2.setSelected(true);
         jRadioButtonMenuItem2.setText("Exit");
+        jRadioButtonMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButtonMenuItem2ActionPerformed(evt);
+            }
+        });
         jMenu4.add(jRadioButtonMenuItem2);
 
         jMenuBar1.add(jMenu4);
@@ -215,6 +215,12 @@ public class General extends javax.swing.JFrame {
         escritorio.moveToFront(consul);
     }//GEN-LAST:event_consultaAlumnosPorMateriaActionPerformed
 
+    private void jRadioButtonMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButtonMenuItem2ActionPerformed
+       JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
+        Principal salida = new Principal();
+        salida.setVisible(true);
+    }//GEN-LAST:event_jRadioButtonMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -263,7 +269,6 @@ public class General extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JRadioButtonMenuItem jRBIncripcion;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem10;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem8;

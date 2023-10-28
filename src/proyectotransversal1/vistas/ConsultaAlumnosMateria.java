@@ -3,6 +3,7 @@ package proyectotransversal1.vistas;
 
 
 import java.util.ArrayList;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import proyectotransversal1.accesoDatos.AlumnoData;
 import proyectotransversal1.accesoDatos.InscripcionData;
@@ -131,6 +132,7 @@ private void cargarAlumnosPorMateria() {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
        dispose();
+       JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
     }//GEN-LAST:event_jButton1ActionPerformed
 
 

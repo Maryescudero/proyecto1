@@ -192,6 +192,7 @@ public class FormularioMateriaData extends javax.swing.JInternalFrame {
 
     private void jBExit2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBExit2ActionPerformed
         dispose();
+        JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
     }//GEN-LAST:event_jBExit2ActionPerformed
 
     private void jbBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbBuscarActionPerformed

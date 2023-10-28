@@ -4,6 +4,8 @@
  */
 package proyectotransversal1.vistas;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author marus
@@ -31,9 +33,9 @@ public class Notas extends javax.swing.JInternalFrame {
         jLabel2 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jtNotas = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jbExit = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -49,10 +51,9 @@ public class Notas extends javax.swing.JInternalFrame {
         jLabel2.setText("Seleccione un Alumno : ");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, 210, 30));
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtNotas.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -63,7 +64,7 @@ public class Notas extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jtNotas);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 700, 270));
 
@@ -72,10 +73,15 @@ public class Notas extends javax.swing.JInternalFrame {
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(51, 0, 0), null, null));
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 470, 150, 50));
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cerrar-sesion.png"))); // NOI18N
-        jButton2.setText("SALIR");
-        jButton2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(51, 0, 0), null, null));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 470, 150, 50));
+        jbExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/cerrar-sesion.png"))); // NOI18N
+        jbExit.setText("SALIR");
+        jbExit.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(51, 0, 0), null, null));
+        jbExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbExitActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jbExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 470, 150, 50));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/icons8-actualizar-94.png"))); // NOI18N
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 20, 100, 130));
@@ -85,16 +91,21 @@ public class Notas extends javax.swing.JInternalFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jbExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbExitActionPerformed
+        dispose();
+        JOptionPane.showMessageDialog(this, "SU CARGA HA SIDO EXITOSA");
+    }//GEN-LAST:event_jbExitActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JButton jbExit;
+    private javax.swing.JTable jtNotas;
     // End of variables declaration//GEN-END:variables
 }
